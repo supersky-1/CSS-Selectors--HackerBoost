@@ -20,7 +20,7 @@ div {
 
 The paragraph could inherit `color: blue` from the `<div>`, but inheritance only matters when the paragraph does not have its own direct color rule. Since `*` directly targets the `<p>`, the direct `color: orange;` wins over the inherited blue color.
 
-So the text inside the `<p>` is **orange**, not black.
+So the text inside the `<p>` is **orange**
 
 ## SCENARIO B
 

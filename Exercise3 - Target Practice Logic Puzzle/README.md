@@ -24,7 +24,7 @@ This works because the second paragraph is the last child inside the `.container
 
 ### 3. Target both paragraphs inside the .container to give them a line-height of 1.6, using a descendant selector.
 
-Use this descendant selector:
+I used this descendant selector:
 
 ```css
 .container p {
