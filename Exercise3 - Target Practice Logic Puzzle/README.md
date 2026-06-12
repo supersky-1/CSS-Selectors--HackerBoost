@@ -40,7 +40,17 @@ The selector `p:nth-child(1)` looks for a `<p>` element that is the first child 
 
 It does not mean "the first paragraph." It means "a paragraph that is also child number 1."
 
-In this HTML, the first paragraph is the first child inside `.container`, so this selector would work:
+In this HTML, the first paragraph is not the first child inside `.container` anymore because the `<h2>` comes before it:
+
+```html
+<div class="container">
+    <h2>Introduction</h2>
+    <p>First paragraph in container.</p>
+    ...
+</div>
+```
+
+Because of that, this selector would not work:
 
 ```css
 .container p:nth-child(1) {
@@ -48,6 +58,14 @@ In this HTML, the first paragraph is the first child inside `.container`, so thi
 }
 ```
 
-However, `p:nth-child(1)` by itself could also target any other paragraph on the page that is the first child of its own parent. Adding `.container` makes the selector more specific to this section.
+The selector is looking for a `<p>` that is child number 1, but child number 1 is the `<h2>`, not the paragraph.
 
-If there were another element before the first paragraph, like a heading, then `p:nth-child(1)` would not target the paragraph anymore because the paragraph would no longer be the first child.
+To target the first paragraph in this updated HTML, a better selector would be:
+
+```css
+.container p:first-of-type {
+    color: purple;
+}
+```
+
+This works because `:first-of-type` looks for the first `<p>` element of its type inside the parent, even if another element like `<h2>` comes before it.
