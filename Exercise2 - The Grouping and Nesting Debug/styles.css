@@ -1,0 +1,10 @@
+/* Teammate's broken CSS */
+nav a {
+    text-decoration: none;
+}
+h2, h3 {
+    color: navy;
+}
+ul.main-list > li {
+    font-weight: bold;
+}

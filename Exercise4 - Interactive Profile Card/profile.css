@@ -1,0 +1,27 @@
+h2, p, button{
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: darkblue;
+    color: white;
+    border: 0px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: red;
+    transform: scale(1.05);
+}
+
+input{
+    border: 2px solid gray
+}
+
+input:focus{
+    border-color: blue;
+    outline: none;
+}
+#user-name{
+    margin: 0;
+}

@@ -1,0 +1,16 @@
+/* SCENARIO A */
+* {
+    color: orange;
+}
+div {
+    color: blue;
+}
+
+/* SCENARIO B */
+* {
+    color: purple;
+}
+.highlight {
+    color: green;
+}
+

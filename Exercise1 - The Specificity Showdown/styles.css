@@ -1,0 +1,21 @@
+
+p {
+    
+    color: blue;
+}
+
+.highlight {
+    color: orange;
+}
+
+#main-text {
+    color: red;
+}
+
+p#main-text.highlight{
+    color: orange;
+}
+
+p.highlight {
+    color: green !important;
+}
